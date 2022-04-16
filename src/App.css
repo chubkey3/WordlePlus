@@ -1,0 +1,147 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.tile {
+  display: flex;
+  width: 75px;
+  height: 75px;
+  border: 3px solid #d3d6da;
+  margin: 5px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  flex-direction: column;
+  text-transform: uppercase;
+  transition: all 0.3s ease-out;
+}
+
+
+.tiles {
+  display: flex;
+  flex-direction: row;
+}
+
+.test {
+  width: fit-content;
+  height: fit-content;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  caret-color: transparent;
+}
+
+.key {
+  width: 60px;
+  height: 75px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  background-color: #d3d6da;
+  color: #000000;
+  text-transform: uppercase;
+  border: 0;
+  padding: 0;
+  margin: 0px 8px 15px 0px;
+  font-size: 18px;
+}
+
+svg {
+  transform: scale(2);
+}
+
+.keyboard {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.startbutton {
+  font-size: 1.5rem;
+  padding: 10px 25px 10px 25px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: whitesmoke;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.5s ease-out;
+}
+
+.slider {
+  width: 300px;
+  height: 10px;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: cornflowerblue;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background-color:slategray;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.slider::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  background-color: slategray;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* look up definitnion */
